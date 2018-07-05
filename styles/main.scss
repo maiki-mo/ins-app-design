@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 1200px;
+  height: 100vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+
+  .mobile-view {
+    margin: 2spx;
+    width: 375px;
+    height: 667px;
+    background: linear-gradient(to bottom, #261758, #D84882);
+    border-radius: 20px;
+
+    #avatar {
+      margin-top: 40px;
+      width: 250px;
+      height: 250px;
+    }
+
+    #avatar:hover {
+      cursor: pointer;
+    }
+
+    .info-bg {
+      background-color: white;
+      width: 350px;
+      height: 342px;
+      margin: 20px auto;
+      border-radius: 20px;
+      overflow: scroll;
+
+      .sub-but {
+        margin-top: 20px;
+        background-color: #CD5887;
+        border: 0;
+        padding: 10px;
+        border-radius: 10px;
+        width: 300px;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
