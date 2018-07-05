@@ -45,7 +45,7 @@ body {
         letter-spacing: 4px; }
       .container .mobile-view .info-bg h4 {
         padding: 8px 10px;
-        font-size: 19px;
+        font-size: 14px;
         color: purple;
         border-radius: 8px;
         margin: 0;
@@ -74,7 +74,8 @@ body {
       border: 1px purple solid;
       background-color: white;
       border-radius: 3px;
-      margin-right: 6px; }
+      margin-right: 6px;
+      margin-bottom: 6px; }
     #factors-disp #factors-answ .fact-span .button-pressed {
       padding-top: 2px;
       padding-left: 5px;
