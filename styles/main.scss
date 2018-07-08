@@ -17,41 +17,81 @@ body {
     margin: 2spx;
     width: 375px;
     height: 667px;
-    background: linear-gradient(to bottom, #261758, #65B3E4);
-    border-radius: 20px;
+    background: linear-gradient(to bottom, #261758, purple);
+    border-radius: 10px;
 
     #avatar {
-      margin-top: 40px;
-      width: 250px;
-      height: 250px;
+      margin-top: 35px;
+      margin-bottom: 5px;
+      width: 200px;
+      height: 200px;
     }
 
-    #avatar:hover {
-      cursor: pointer;
+    .swipe-bg {
+      height: 60px;
+      background-color: white;
+      width: 358px;
+      margin: 10px auto 0 auto;
+      border-radius: 10px;
+
+      .sub-but {
+        margin: 8px 2px -2px 2px;
+        background-color: #580068;
+        border: 0;
+        padding: 8px;
+        border-radius: 6px;
+        width: 300px;
+        font-family: $main-text;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+
+      .sub-but:hover {
+        cursor: pointer;
+      }
     }
 
     .info-bg {
       background-color: white;
-      width: 330px;
-      height: 322px;
+      width: 340px;
+      height: 295px;
       margin: 20px auto;
-      border-radius: 20px;
+      border-radius: 10px;
       overflow: scroll;
       text-align: left;
-      padding: 10px 10px;
+      padding: 10px 10px 10px 10px;
+
+      .filter-div {
+        text-align: center;
+      }
+
+      h3 {
+        color: #63006D;
+        font-family: $main-text;
+        margin: 7px 20px;
+        border-radius: 6px;
+        letter-spacing: 2px;
+        padding-top: 2px;
+      }
 
       .sub-but {
-        margin: 20px 18px -2px 16px;
-        background-color: #65B3E4;
+        margin: 10px 18px -2px 16px;
+        background-color: #84007B;
         border: 0;
         padding: 8px;
-        border-radius: 10px;
-        width: 300px;
+        border-radius: 6px;
+        width: 305px;
         font-family: $main-text;
-        font-size: 40px;
+        font-size: 32px;
         color: white;
         font-weight: bold;
         letter-spacing: 4px;
+      }
+
+      .sub-but:hover {
+        cursor: pointer;
       }
 
       h4 {
@@ -63,13 +103,6 @@ body {
         margin-right: 10px;
         font-family: $main-text;
         letter-spacing: 2px;
-      }
-
-      .range {
-        height: 17px;
-        width: 140px;
-        margin-top: 10px;
-        margin-bottom: 10px;
       }
     }
   }
@@ -85,7 +118,15 @@ body {
   #factors-answ {
     .fact-span {
       display: inline-block;
-      height: 40px;
+      height: 38px;
+
+      .slider {
+        margin-top: 15px;
+        -webkit-appearance: none;
+        height: 6px;
+        width: 160px;
+        background: purple;
+      }
 
       .ans-icon {
         width: 40px;
@@ -98,35 +139,17 @@ body {
         opacity: 1;
       }
 
-      #loc-icon {
-        // height: 3px;
-      }
-
       .button {
-        padding-top: 2px;
-        padding-left: 5px;
-        color: purple;
-        font-family: $main-text;
-        font-weight: bold;
-        width: 50px;
-        height: 30px;
-        border: 0;
-        background-color: white;
-        border-radius: 90px;
-        margin-right: 6px;
-        margin-bottom: 6px;
       }
 
       .button:hover {
-        background-color: lightgrey;
-        color: purple;
       }
     }
   }
 }
 
 .fact-span>h4 {
-  height: 27px;
+  height: 29px;
 }
 
 ::-webkit-scrollbar {

@@ -12,7 +12,15 @@
   <main class="container">
     <section class="mobile-view">
       <img onclick="changeGender()" id="avatar" alt="Img based on Gender" src="./images/avatars/avatar-m.png" />
+      <article class="swipe-bg">
+        <form>
+          <input class="sub-but" type="submit" value="Swipe through Leads"/>
+        </form>
+      </article>
       <article class="info-bg">
+        <div class="filter-div">
+          <h3>Filters</h3>
+        </div>
         <form>
           <div id="factors-disp">
             <section id="factors">
@@ -20,17 +28,15 @@
               <span class="fact-span"><h4>Family:</h4></span>
               <span class="fact-span"><h4>Transport:</h4></span>
               <span class="fact-span"><h4>Credit:</h4></span>
-              <span class="fact-span"><h4>Something:</h4></span>
             </section>
             <section id="factors-answ">
-              <span class="fact-span"><input class="button" type="button" value="18-25"/><input class="button" type="button" value="26-64"/><input class="button" type="button" value="65+"/></span><br />
+              <span class="fact-span"><input type="range" min="18" max="100" class="slider" /></span><br />
               <span class="fact-span"><img class="ans-icon" src='./images/family-icons/boy.png'><img class="ans-icon" src='./images/family-icons/family.png'><img class="ans-icon" src='./images/family-icons/family.png'></span><br />
               <span class="fact-span"><img class="ans-icon" src="./images/transports/bicycle.png"><img class="ans-icon" src="./images/transports/motorcycle.png"><img class="ans-icon" src="./images/transports/bus.png"><img class="ans-icon" src="./images/transports/car.png"></span><br />
               <span class="fact-span"><img class="ans-icon" src="./images/location/hotel.png"><img class="ans-icon" src="./images/location/mountains.png"><img class="ans-icon" src="./images/location/sunbed.png"></span><br />
-              <span class="fact-span"></span><br />
             </section>
           </div>
-          <input class="sub-but" type="submit" />
+          <input class="sub-but" type="submit" value="Request Lead" />
         </form>
       </article>
     </section>
