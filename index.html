@@ -11,15 +11,21 @@
 <body>
   <main class="container">
     <section class="mobile-view">
+      <div class="app-pos">
+        <span id="selected-dot" class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
       <img onclick="changeGender()" id="avatar" alt="Img based on Gender" src="./images/avatars/avatar-m.png" />
       <article class="swipe-bg">
         <form>
-          <input class="sub-but" type="submit" value="Swipe through Leads"/>
+          <input class="sub-but" type="submit" value="Swipe Through Leads"/>
         </form>
       </article>
       <article class="info-bg">
         <div class="filter-div">
-          <h3>Filters</h3>
+          <h3>Filter Leads</h3>
+          <hr />
         </div>
         <form>
           <div id="factors-disp">
@@ -27,15 +33,16 @@
               <span class="fact-span"><h4>Age:</h4></span>
               <span class="fact-span"><h4>Family:</h4></span>
               <span class="fact-span"><h4>Transport:</h4></span>
-              <span class="fact-span"><h4>Credit:</h4></span>
+              <span class="fact-span"><h4>Location:</h4></span>
             </section>
             <section id="factors-answ">
               <span class="fact-span"><input id="age-slider" type="range" min="18" max="100" class="slider" /><h3 id="age-dis">59</h3></span><br />
-              <span class="fact-span"><img class="ans-icon" src='./images/family-icons/boy.png'><img class="ans-icon" src='./images/family-icons/family.png'><img class="ans-icon" src='./images/family-icons/family.png'></span><br />
+              <span class="fact-span"><img class="ans-icon" src='./images/family-icons/boy.png'><img class="ans-icon" src='./images/family-icons/newlyweds.png'><img class="ans-icon" src='./images/family-icons/family.png'></span><br />
               <span class="fact-span"><img class="ans-icon" src="./images/transports/bicycle.png"><img class="ans-icon" src="./images/transports/motorcycle.png"><img class="ans-icon" src="./images/transports/bus.png"><img class="ans-icon" src="./images/transports/car.png"></span><br />
               <span class="fact-span"><img class="ans-icon" src="./images/location/hotel.png"><img class="ans-icon" src="./images/location/mountains.png"><img class="ans-icon" src="./images/location/sunbed.png"></span><br />
             </section>
           </div>
+          <hr />
           <input class="sub-but" type="submit" value="Request Lead" />
         </form>
       </article>
