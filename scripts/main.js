@@ -7,3 +7,14 @@ function changeGender() {
     av.src = './images/avatar-f.png';
   }
 }
+
+let slider = document.querySelector('#age-slider');
+
+slider.oninput = () => {
+  let sliVal = document.querySelector('#age-dis');
+  let value = slider.value;
+
+  sliVal.innerHTML = slider.value;
+}
+
+console.log(slider.value);

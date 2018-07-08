@@ -70,7 +70,7 @@ body {
       h3 {
         color: #63006D;
         font-family: $main-text;
-        margin: 7px 20px;
+        margin: 0px 20px 3px 16px;
         border-radius: 6px;
         letter-spacing: 2px;
         padding-top: 2px;
@@ -119,12 +119,13 @@ body {
     .fact-span {
       display: inline-block;
       height: 38px;
+      padding-top: 0.5px;
 
       .slider {
         margin-top: 15px;
         -webkit-appearance: none;
         height: 6px;
-        width: 160px;
+        width: 150px;
         background: purple;
       }
 
@@ -155,4 +156,10 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+#age-dis {
+  display: inline-block;
+  position: relative;
+  top: 4px;
 }
