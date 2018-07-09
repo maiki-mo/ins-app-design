@@ -4,14 +4,15 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: lightgrey;
 }
 
 .container {
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 1600px;
   text-align: center;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 25% 25% 25% 25%;
 
   .mobile-view {
     margin: 2spx;
@@ -62,14 +63,14 @@ body {
       background-color: white;
       width: 358px;
       margin: 10px auto 0 auto;
-      // border-radius: 10px;
+      border-radius: 3px;
 
       .sub-but {
-        margin: 8px 2px -2px 2px;
+        margin: 9px 2px -2px 2px;
         background-color: #580068;
         border: 0;
         padding: 8px;
-        // border-radius: 6px;
+        border-radius: 3px;
         width: 300px;
         font-family: $main-text;
         font-size: 20px;
@@ -88,7 +89,7 @@ body {
       width: 340px;
       height: 295px;
       margin: 20px auto;
-      // border-radius: 10px;
+      border-radius: 3px;
       overflow: scroll;
       text-align: left;
       padding: 10px 10px 10px 10px;
@@ -107,11 +108,11 @@ body {
       }
 
       .sub-but {
-        margin: 10px 18px -2px 16px;
+        margin: 10px 18px 0px 16px;
         background-color: #84007B;
         border: 0;
         padding: 8px;
-        // border-radius: 6px;
+        border-radius: 3px;
         width: 305px;
         font-family: $main-text;
         font-size: 32px;
@@ -176,7 +177,6 @@ body {
       .ans-icon {
         width: 40px;
         margin: 0 6px;
-        opacity: 0.7;
       }
 
       .ans-icon:hover {
@@ -204,4 +204,33 @@ body {
   display: inline-block;
   position: relative;
   top: 4px;
+}
+
+#non-selected-icon {
+  opacity: 0.3;
+}
+
+.leads-bg {
+  background-color: white;
+  width: 340px;
+  height: 90px;
+  margin: 25px auto 0px auto;
+  border-radius: 3px;
+  padding: 6px 10px;
+  text-align: left;
+  display: flex;
+  flex: row;
+
+  .leads-img {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+#queue-h1 {
+  font-family: $main-text;
+  color: white;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: -10px;
 }
