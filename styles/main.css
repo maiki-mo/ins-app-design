@@ -159,6 +159,14 @@ body {
   text-align: left;
   display: flex;
   flex: row; }
+  .leads-bg .inner-queue {
+    margin: -9px 0 0 20px;
+    color: purple;
+    font-family: "Nunito", sans-serif; }
+    .leads-bg .inner-queue h3 {
+      margin-bottom: 25px; }
+    .leads-bg .inner-queue p {
+      font-weight: bold; }
   .leads-bg .leads-img {
     height: 90px;
     width: 90px; }
@@ -174,13 +182,24 @@ body {
   margin-top: 60px;
   width: 270px; }
 
-.call-bg {
+.call-bg h3 {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 44px;
+  margin-bottom: 10px; }
+.call-bg h4 {
   background-color: white;
-  width: 340px;
-  height: 264px;
-  margin: 40px auto 0px auto;
-  border-radius: 3px;
-  padding: 6px 10px;
-  text-align: left; }
+  padding: 8px 4px 4px 4px;
+  height: 50px;
+  font-size: 34px;
+  font-family: "Nunito", sans-serif;
+  margin: 36px 35px;
+  border-radius: 3px; }
+.call-bg p {
+  margin: 0;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
