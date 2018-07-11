@@ -24,8 +24,8 @@ body {
       padding-right: 10px; }
     .container .mobile-view .app-pos {
       text-align: center;
-      margin-top: 4px;
-      margin-bottom: -20px; }
+      margin-top: 20px;
+      margin-bottom: -28px; }
       .container .mobile-view .app-pos .dot {
         display: inline-block;
         height: 10px;
@@ -201,5 +201,14 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   font-weight: bold; }
+
+.sel-button {
+  margin-top: -6px;
+  width: 80px;
+  cursor: pointer; }
+
+#sel-but-right {
+  margin-left: 38px;
+  margin-right: 100px; }
 
 /*# sourceMappingURL=main.css.map */
